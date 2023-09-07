@@ -14,5 +14,13 @@ int main()
 
     cout << int('A') << endl;
     cout << (int)'A' << endl;
-    cout << static_cast<int>('A');
+    cout << static_cast<int>('A') << endl;
+
+    auto e = 1;
+    auto f = 1.0;
+    auto g = 2323L;
+
+    cout << sizeof(e) << endl;
+    cout << sizeof(f) << endl;
+    cout << sizeof(g) << endl;
 }
