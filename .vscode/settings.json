@@ -41,7 +41,8 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "typeinfo": "cpp",
-        "climits": "cpp"
+        "climits": "cpp",
+        "cstring": "cpp"
     },
     "java.project.explorer.showNonJavaResources": false
 }

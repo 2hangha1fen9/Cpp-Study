@@ -11,4 +11,7 @@ int main()
     C++)";
     cout << hello << endl;
     cout << rawString << endl;
+
+    wchar_t wchar[] = L"HelloWorld!!";
+    wcout << wchar << sizeof(wchar) << endl;
 }
