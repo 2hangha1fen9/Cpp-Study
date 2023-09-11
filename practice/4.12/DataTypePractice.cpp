@@ -1,12 +1,13 @@
 #include <iostream>
 #include <array>
 #include <cstring>
+#include <vector>
 using namespace std;
 
-void demo11();
+void demo15();
 
 int main() {
-    demo11();
+    demo15();
 }
 
 void demo1() {
@@ -85,3 +86,47 @@ void demo11() {
     cout << *ted_p << endl;
 }
 
+void demo12() {
+    float treacle[] = { 1,3,5,7,9,2,4,6,8,10 };
+    float* p = treacle;
+    cout << *p << endl;
+    p += 9;
+    cout << *p << endl;
+}
+
+void demo13() {
+    int size;
+    cin >> size;
+    int* array = new int[size];
+    cout << array << endl;
+    delete[] array;
+
+    cin >> size;
+    vector<int> vec(size);
+    cout << vec.size() << endl;
+}
+
+void demo14() {
+    cout << (int*)"Home of the jolly bytes"; // 0x405001
+    cout << (string*)"Home of the jolly bytes"; // 0x405001
+    cout << (char*)"Home of the jolly bytes"; // Home of the jolly bytes
+}
+
+void demo15() {
+    struct Fish {
+        string variety;
+        unsigned int weight;
+        float length;
+    };
+
+    Fish* fish = new Fish;
+    fish->variety = "鲸鱼";
+    fish->weight = 24;
+    fish->length = 100;
+
+    cout << fish->variety << endl;
+    cout << fish->weight << endl;
+    cout << fish->length << endl;
+
+    delete fish;
+}

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 using namespace std;
 
 int main()
@@ -14,4 +15,9 @@ int main()
 
     wchar_t wchar[] = L"HelloWorld!!";
     wcout << wchar << sizeof(wchar) << endl;
+
+    char a[] = "sdfa";
+    char b[] = "aadf";
+    //strcmp 0相等   1不相等
+    cout << strcmp(a, b) << endl;
 }
